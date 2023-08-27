@@ -864,7 +864,26 @@ responsive media query start */
         justify-items: center;
         margin-left: 2px;
     }
+    .web .web-content {
+          width: 100%;
+          justify-content: center;
+         
+    }
+    .cad .cad-content {
+        width: 100%;
+        justify-content: center;
+       
+    }
+    .laser .laser-content {
+    width: 100%;
+    justify-content: center;
    
+    }
+    
+    
+
+   
+
 
 
 }
@@ -882,12 +901,45 @@ responsive media query start */
     }
 }
 @media (max-width: 500px){
-    
+    .max-width{
+        padding: 0 23px;
+    }
      .home .home-content .text-2{
         font-size: 50px;
         color: black;
     }
     .home .home-content .text-3{
+        font-size: 27px;
+        color: black;
+    }
+    .web .web-content .text-2{
+        font-size: 50px;
+        color: black;
+    }
+    .web .web-content .text-3{
+        font-size: 27px;
+        color: black;
+    }
+    /* .web .web-content .calimg img{
+        justify-items: center;
+        margin-right: 600px;
+    }
+    .web .web-content .webimg img{
+        justify-items: center;
+    } */
+    .cad .cad-content .text-2{
+        font-size: 50px;
+        color: black;
+    }
+    .cad .cad-content .text-3{
+        font-size: 27px;
+        color: black;
+    }
+    .laser .laser-content .text-2{
+        font-size: 50px;
+        color: black;
+    }
+    .laser .laser-content .text-3{
         font-size: 27px;
         color: black;
     }
