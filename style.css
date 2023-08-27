@@ -1,0 +1,894 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+/*navbar styling*/
+.navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding: 30px 0;
+    font-family: 'ubuntu', sans-serif;
+    transition: all 0.3s ease;
+}
+.navbar.sticky{
+    padding: 15px 0;
+    background:rgb(247, 247, 97);
+
+}
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo a{
+    color: black;
+    font-size: 35px;
+    font-weight: 600;
+
+}
+.navbar .logo a span{
+    color:rgb(234, 238, 31) ;
+    background: black;
+    transition: all 0.3s ease;
+}
+.navbar.sticky .logo a span{
+    color: white;
+}
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu .li a{
+   color: white; 
+   font-size: 18px;
+   font-weight: 500;
+   margin-left: 35px;
+   transition: color 0.3s ease;
+}
+.navbar .menu li a:hover{
+    color: black;
+}
+.navbar.sticky .menu li a:hover{
+    color:black;
+   
+}
+.navbar .menu button{
+    background-color:black;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    font-style: inherit;
+    border-color:white;
+    border-radius: 10px;
+    width:8rem ;
+    height: 3rem;
+    margin-left: 20px;
+    color: white;
+    justify-content: center;
+}
+.navbar .menu button:hover{
+    text-shadow: rgb(247, 247, 97);
+    background: black;
+}
+.navbar .menu button:hover{
+    background-color: rgb(74, 71, 71) ;
+    color: black ;
+    border: 2px solid green;
+    color: white;
+    border-color: black;
+  }
+
+  /* menu btn styling */
+  .menu-btn{
+    color: #fff;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+
+  }
+/* home section styling */
+.home{
+    display: flex;
+    background: url(white2.jpg);
+    height: 100vh;
+    color: #fff;
+    min-height: 500px;
+    font-family: 'ubuntu', sans-serif;
+}
+.home .max-width{
+    margin: auto 0 auto 40px;
+}
+.home .home-content .text-1{
+    font-size: 27px;
+    color: black;
+}
+.home .home-content .text-2{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+    color: black;
+}
+.home .home-content .text-3{
+    font-size: 40px;
+    margin: 5px 0;
+    color: black;
+}
+.home .home-content .text-3 span{
+    color:rgb(247, 247, 97) ;
+    background: black;
+    font-weight: 500;
+}
+
+/* about section styling */
+section{
+    padding: 100px 0;
+}
+.about,.contact,.report,.web,.cad,.academic,.project{
+    font-family: 'Poppins', sans-serif;
+    background-image: url(white2.jpg);
+}
+.about .title{
+    position:relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight:500 ;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu',sans-serif;
+}
+
+
+.about .title::before{
+    content:"";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: black;
+    transform: translateX(-50%);
+}
+.about .title::after{
+    content:"Who I am";
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    font-size: 20px;
+    color: rgb(247, 247, 97);
+    padding: 5px;
+    background: black;
+    transform: translateX(-50%);
+}
+.about .about-content,
+.contact .contact-content,
+.report .report-content
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.about .about-content .left{
+    width: 45%;
+}
+.about .about-content .left img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+.about .about-content .right{
+    width: 55%;
+}
+.about .about-content .right .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.about .about-content .right .text span{
+    color: rgb(247, 247, 97) ;
+    background: black;
+}
+.about .about-content .right p{
+    text-align: justify;
+}
+.about .about-content .right a{
+    display: inline-block;
+    background: rgb(247, 247, 97);
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid rgb(247, 247, 97);
+    transition: all 0.3s ease;
+}
+.about .about-content .right a:hover{
+    color:  rgb(247, 247, 97);
+    background: none;
+}
+/* contact secton styling */
+.contact{
+    font-family: 'Poppins',sans-serif;
+}
+.contact .title{
+    position:relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight:500 ;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu',sans-serif;
+}
+
+
+.contact .title::before{
+    content:"";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: black;
+    transform: translateX(-50%);
+}
+
+.contact .title::after{
+    content: "get in touch";
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    font-size: 20px;
+    color: rgb(247, 247, 97);
+    padding: 5px;
+    background: black;
+    transform: translateX(-50%);
+}
+.contact .contact-content .column{
+    width: calc(50% - 30%);
+
+}
+.contact .contact-content .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.contact .contact-content .left p{
+    text-align: justify;
+}
+.contact .contact-content .left .icons{
+    margin: 30px 0;
+}
+.contact .contact-content .row{
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+.contact .contact-content .row .info{
+    margin-left: 30px;
+
+}
+.contact .contact-content .row i{
+    font-size: 25px;
+    color: rgb(70, 156, 190);
+}
+.contact .contact-content  .info .head{
+    font-weight: 500;
+}
+.contact .contact-content  .info .sub-title{
+    color: #333;
+}
+/* reports section styling */
+.report .title{
+    position:relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight:500 ;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu',sans-serif;
+}
+
+
+.report .title::before{
+    content:"";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: black;
+    transform: translateX(-50%);
+}
+
+.report .title::after{
+    content: "Skills I Learned";
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    font-size: 20px;
+    color: rgb(247, 247, 97);
+    padding: 5px;
+    background: black;
+    transform: translateX(-50%);
+}
+.report .report-content .card{
+    width: calc(33% - 20px);
+    background:rgb(247, 247, 97);
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    justify-content: center;
+}
+.report .report-content .card .box{
+    transition: all 0.3s ease;
+}
+.report .report-content .card:hover .box{
+    transform: scale(1.05);
+}
+.report .report-content .card i{
+    font-size: 50px;
+    color: black;
+}
+.report .report-content .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}    
+.report .report-content .card button{
+    background-color:black;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    font-style: inherit;
+    border-color:white;
+    border-radius: 10px;
+    width:8rem ;
+    height: 3rem;
+    color: white;
+    justify-content: center;
+}
+/* web page styling */
+.web{
+    background-image: url(white2.jpg);
+}
+.web .title{
+    position:relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight:500 ;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu',sans-serif;
+}
+
+
+.web .title::before{
+    content:"";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: black;
+    transform: translateX(-50%);
+}
+
+.web .title::after{
+    content: "Module 1";
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    font-size: 20px;
+    color: rgb(247, 247, 97);
+    padding: 5px;
+    background: black;
+    transform: translateX(-50%);
+}
+.web .web-content .sub-title{
+    position:relative;
+    /* text-align: center; */
+    font-size: 40px;
+    font-weight:500 ;
+    /* margin-bottom: 4px; */
+    padding-bottom: 20px;
+    font-family: 'Ubuntu',sans-serif;
+}
+.web .web-content .column right .text{
+    /* justify-content: center; */
+    text-align: center;
+}
+.web .web-content .text{
+font-size: 300px;
+font-weight: 600;
+margin-bottom: 50px;
+text-align: center;
+margin-left: 50px;
+padding-left: 20%;
+}
+.web .web-content .p .text{
+    padding: 100%;
+}
+.web .web-content{
+    width: fit-content;
+}
+.web .web-content .sub-title .h1{
+
+    position:relative;
+    /* text-align: center; */
+    font-size: 20px;
+    font-weight:500 ;
+    /* margin-bottom: 4px; */
+    padding-bottom: 20px;
+    font-family: 'Ubuntu',sans-serif;
+}
+.web .web-content .calimg{
+    display: inline-block;
+    justify-content: center;
+}
+.web .web-content .calimg img{
+    width: 400px;
+    height: 458px;
+}
+.web .web-content .calimg{
+    justify-items: center;
+    margin-left: 375px;
+}
+.web .web-content .webimg img{
+    width: 700px;
+    height: 458px;
+}
+.web .web-content .webimg{
+    justify-items: center;
+    margin-left: 280px;
+}
+
+/* cad page styling */
+.cad{
+    background-image: url(white2.jpg);
+}
+.cad .title{
+    position:relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight:500 ;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu',sans-serif;
+}
+
+
+.cad .title::before{
+    content:"";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: black;
+    transform: translateX(-50%);
+}
+
+.cad .title::after{
+    content: "Module 1";
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    font-size: 20px;
+    color: rgb(247, 247, 97);
+    padding: 5px;
+    background: black;
+    transform: translateX(-50%);
+}
+.cad .cad-content .sub-title{
+    position:relative;
+    /* text-align: center; */
+    font-size: 40px;
+    font-weight:500 ;
+    /* margin-bottom: 4px; */
+    padding-bottom: 20px;
+    font-family: 'Ubuntu',sans-serif;
+}
+.cad .cad-content .column right .text{
+    /* justify-content: center; */
+    text-align: center;
+}
+.cad .cad-content .text{
+font-size: 300px;
+font-weight: 600;
+margin-bottom: 50px;
+text-align: center;
+margin-left: 50px;
+padding-left: 20%;
+}
+.cad .cad-content .p .text{
+    padding: 100%;
+}
+.cad .cad-content{
+    width: fit-content;
+}
+.cad .cad-content .sub-title .h1{
+
+    position:relative;
+    /* text-align: center; */
+    font-size: 20px;
+    font-weight:500 ;
+    /* margin-bottom: 4px; */
+    padding-bottom: 20px;
+    font-family: 'Ubuntu',sans-serif;
+}
+.cad .cad-content .cadimg img{
+    
+    width: 400px;
+    height: 458px;
+} 
+.cad .cad-content .cadimg {
+    justify-content: center;
+    margin-left: 375px;
+}
+/*  laser-page styling */
+.laser{
+    background-image: url(white2.jpg);
+}
+.laser .title{
+    position:relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight:500 ;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu',sans-serif;
+}
+
+
+.laser .title::before{
+    content:"";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: black;
+    transform: translateX(-50%);
+}
+
+.laser .title::after{
+    content: "Module 1";
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    font-size: 20px;
+    color: rgb(247, 247, 97);
+    padding: 5px;
+    background: black;
+    transform: translateX(-50%);
+}
+.laser .laser-content .sub-title{
+    position:relative;
+    /* text-align: center; */
+    font-size: 40px;
+    font-weight:500 ;
+    /* margin-bottom: 4px; */
+    padding-bottom: 20px;
+    font-family: 'Ubuntu',sans-serif;
+}
+.laser .laser-content .column right .text{
+    /* justify-content: center; */
+    text-align: center;
+}
+.laser .laser-content .text{
+font-size: 300px;
+font-weight: 600;
+margin-bottom: 50px;
+text-align: center;
+margin-left: 50px;
+padding-left: 20%;
+}
+.laser .laser-content .p .text{
+    padding: 100%;
+}
+.laser .laser-content{
+    width: fit-content;
+}
+.laser .laser-content .sub-title .h1{
+
+    position:relative;
+    /* text-align: center; */
+    font-size: 20px;
+    font-weight:500 ;
+    /* margin-bottom: 4px; */
+    padding-bottom: 20px;
+    font-family: 'Ubuntu',sans-serif;
+}
+.laser .laser-content .laserimg img{
+    width: 400px;
+    height: 458px;
+}
+.laser .laser-content .laserimg {
+    justify-content: center;
+    margin-left: 375px;
+}
+
+/* academic page styling */
+.academic .title{
+    position:relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight:500 ;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu',sans-serif;
+}
+.academic .title::after{
+    content: "My Qualification";
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    font-size: 20px;
+    color: rgb(247, 247, 97);
+    padding: 5px;
+    background: black;
+    transform: translateX(-50%);
+}
+/* Qualification page styling */
+.academic .academic-content .col .contents .box{
+    position: relative;
+    padding: 20px;
+    border: 1px solid #eaeaea;
+    background-color: rgb(247, 247, 97);
+    cursor: pointer;
+    transition: all o.4s;
+    margin-bottom: 25px;
+    width: 500px;
+    
+}
+.academic .academic-content .row .col .contents {
+    justify-content: center;
+}
+.col .contents .box:hover{
+    box-shadow: 0px 3px 12px 0px #ccc;
+    border: 1px solid transparent;
+}
+.col .contents .box::before{
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    right: calc(100% + 22px);
+    top: 0;
+    background-color:black;
+    border: 2px solid white;
+
+
+}
+.academic .academic-content .box h4{
+    position: relative;
+    color:  black;
+}
+.academic .academic-content .col .contents{
+    padding: 0px 30px;
+    border-left: 2px solid #baba;
+}
+/* project page styling */
+.project .title,.project .sub-title,.project .sub-title .sub-title h2{
+    position:relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight:500 ;
+    margin-bottom: 60px;
+    padding-bottom: 15px;
+    font-family: 'Ubuntu',sans-serif;
+    padding-top: 10px;
+}
+
+
+.project .title::before{
+    content:"";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: black;
+    transform: translateX(-50%);
+}
+.project .title::after{
+    content:"My Projects";
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    font-size: 20px;
+    color: rgb(247, 247, 97);
+    padding: 5px;
+    background: black;
+    transform: translateX(-50%);
+}
+.project .project-content p{
+    text-align: center;
+}
+.project .project-content button{
+    background-color:black;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    font-style: inherit;
+    border-color:white;
+    border-radius: 10px;
+    width:8rem ;
+    height: 3rem;
+    margin-left: 20px;
+    color: white;
+    justify-content:space-around;
+    position: absolute;
+    left: 38rem;
+    top: 28rem;
+}
+.project .project-content button:hover{
+    text-shadow: rgb(247, 247, 97);
+    background: black;
+}
+.project .project-content button:hover{
+    background-color: rgb(74, 71, 71) ;
+    color: black ;
+    border: 2px solid green;
+    color: white;
+    border-color: black;
+  } 
+  /* foo styling */
+  .foo{
+    text-align: center;
+    justify-content: center;
+    height: 50px;
+    background-color:  rgb(247, 247, 97);
+    font-family: 'Poppins', sans-serif;
+
+    
+    
+    font-size: 20px;
+    color: rgb(247, 247, 97);
+    padding: 5px;
+    background: black;
+   
+  }
+
+
+/* 
+responsive media query start */
+@media (max-width: 1300px){
+    .home .max-width{
+        margin-left: 0px;
+    }
+
+}
+@media (max-width: 1104px){
+    .about .about-content .left img{
+        height: 350px;
+        width: 350px;
+    }
+}
+
+@media (max-width: 991px){
+    .max-width{
+        padding: 0 50px;
+    }
+    
+}
+@media (max-width: 947px){
+    /* .max-width{
+        padding: 0 50px;
+    } */
+    .menu-btn{
+        display: block;
+        z-index: 999;
+        color: #111;
+       }
+    .menu-btn i.active:before{
+        content: "\f00d";
+    }
+    .navbar .menu{
+        position: fixed;
+        height: 100vh;
+        width:100%;
+        left: -100%;
+        top: 0;
+        background:rgb(247, 247, 97);
+        padding-top: 80px;
+        text-align: center;
+        justify-content: center;
+        transition: all 0.3s ease;
+    }
+    .navbar .menu.active{
+        left:0;
+    }
+    .navbar .menu li{
+        display: block;
+    }
+    .navbar .menu li a{
+        display:inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+    .home .home-content .text-2{
+        font-size: 70px;
+        color: black;
+    }
+    .home .home-content .text-3{
+        font-size: 35px;
+        color: black;
+    }
+    .max-width{
+        max-width: 800px;
+    }
+    .about .about-content .column{
+        width: 100%;
+    }
+    .about .about-content .left{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+    .about .about-content .right{
+        flex: 100%;
+    }
+    .report .report-content{
+        display: inline;
+        padding-bottom: 40px; 
+    }
+    .report .report-content .card{
+        width: calc(100% - 20px);
+        background:rgb(247, 247, 97);
+        text-align: center;
+        border-radius: 6px;
+        /* padding: 20px 25px; */
+        cursor: pointer;
+        transition: all 0.3s ease;
+        justify-content: center;
+        /* padding-bottom: 40px; */
+        border: #111;
+        justify-items: center;
+        margin-left: 2px;
+    }
+   
+
+
+}
+@media (max-width: 690px){
+    .max-width{
+        padding: 0 23px;
+    }
+     .home .home-content .text-2{
+        font-size: 60px;
+        color: black;
+    }
+    .home .home-content .text-3{
+        font-size: 32px;
+        color: black;
+    }
+}
+@media (max-width: 500px){
+    
+     .home .home-content .text-2{
+        font-size: 50px;
+        color: black;
+    }
+    .home .home-content .text-3{
+        font-size: 27px;
+        color: black;
+    }
+}
